@@ -20,11 +20,80 @@ p{
     padding: 15px 40px ;
     border-radius: 30px;
     display: block;
-    margin: 0 auto ;
+    margin: 60px auto ;
 }
+
 .brahma{
     border: 1px solid white;
     border-radius: 250px;
     display: block;
     margin: 0 auto;
+}
+.section-container{
+    display:flex ;
+    align-items: center;
+    height: 100vh;
+    padding: 0px 90px;
+    justify-content: center;
+    gap: 200px;
+    
+
+}
+
+.main-div{
+    display: flex;
+    flex-direction: column;
+}
+.image-container{
+    display:flex;
+    align-items: center;
+    
+    
+}
+.container{
+    height: 100vh;
+
+}
+.header{
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 100px;
+}
+.line{
+    display: flex;
+    gap: 30px;
+    padding: 0px 70px;
+}
+.line li{
+    list-style-type: none;
+    font-size: 30px;
+}
+li:hover{
+    text-decoration: underline;
+    text-decoration-color: white;
+ }
+.trailer{
+    color: orange;
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    flex-direction: column;
+    align-items: center;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+    justify-content: center;
+    gap: 30px;
+
+}
+.main-div h1{
+    display: flex;
+    justify-content: center;
+    color: rgb(240, 4, 4);
+    font-size: 30px;
+    margin: 100px;
+    text-decoration: underline;
 }

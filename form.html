@@ -6,46 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form
     </title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-    <h1>CONNECT WITH ME</h1>
-    <form action="">
-        <label for="name">NAME:</label><br>
-        <input type="text" name="name" placeholder="Enter your name">
-        <BR>
-        <BR>
-        <label for="email">EMAIL:</label><br>
-        <input type="email" name="email" placeholder="Enter your mail id"><br>
-        <br>
-        <label for="text">MESSAGE:</label><br>
-        <textarea name="text" cols="30" rows="10" placeholder="Enter your message"></textarea>
-        <br><br>
-        <label for="text">HOBBIES:</label>
-        <br><br>
-        <label for="checkbox">CRICKET </label>
-        <input type="checkbox" name="cricket">
-        <br>
-        <label for="checkbox">FOOTBALL </label>
-        <input type="checkbox" name="fooball">
-        <br>
-        <label for="checkbox">READING </label>
-        <input type="checkbox" name="READING">
-        <br><br>
-        <label for="Education">EDUCATION:</label>
-        <select name="Education">
-            <option value="ug">under graduate</option>
-            <option value="pg">post graduate</option>
-            <option value="dip">diploma</option>
-            <option value="+2">plus two</option>
-        </select>
-        <br><br>
-        <label for="file">upload image:</label>
-        <input type="file">
-        <br><br>
-        <input type="submit">
+    <div class="flex flex-col justify-center items-center bg-black ">
+        <h1 class="font-extrabold text-4xl text-red-500 m-8">CONNECT WITH ME</h1>
+        <form class="flex flex-col border border-white p-10 rounded-3xl bg-amber-100 " action="">
+            <label class="font-bold" for="name">NAME:</label>
+            <input class="border  border-black p-2 rounded-lg " type="text" name="name" placeholder="Enter your name">
+            <BR>
+            
+            <label class="font-bold" for="email">EMAIL:</label>
+            <input class="border  border-black p-2 rounded-lg " type="email" name="email" placeholder="Enter your mail id"><br>
+            
+            <label class="font-bold" for="text">MESSAGE:</label>
+            <textarea class="border  border-black p-2 rounded-lg " name="text" cols="30" rows="10"
+                placeholder="Enter your message"></textarea>
+            <br>
+            <label class="font-bold" for="text">HOBBIES:</label>
+            <br>
+            <div class="flex gap-10 ">
+                <label class="font-bold" for="checkbox">CRICKET </label>
+                <input type="checkbox" name="cricket">
+            </div>
+                <br>
+                <div class="flex gap-6">
+                <label class="font-bold" for="checkbox">FOOTBALL </label>
+                <input type="checkbox" name="fooball">
+            </div>
+                <br>
+                <div class="flex gap-8">
+                <label class="font-bold" for="checkbox">READING </label>
+                <input type="checkbox" name="READING">
+            </div>
+                <br>
+            <label class="font-bold" for="Education">EDUCATION:</label>
+            <select class="border  border-black" name="Education">
+                <option value="ug">under graduate</option>
+                <option value="pg">post graduate</option>
+                <option value="dip">diploma</option>
+                <option value="+2">plus two</option>
+            </select>
+            <br><br>
+            <label class="font-bold" for="file">upload image:</label>
+            <input type="file">
+            <br><br>
+            <input class="border  border-black p-2 rounded-lg bg-cyan-400 text-white" type="submit">
 
-    </form>
+        </form>
+
+    </div>
 
 </body>
 
